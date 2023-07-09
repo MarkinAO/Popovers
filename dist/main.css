@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+.btn {
+    padding: 10px 25px;
+    color: white;
+    background-color: rgb(253, 95, 95);
+    border: none;
+    border-radius: 5px;
+}
+
+.tooltip {
+    position: absolute;
+    max-width: 200px;
+    text-align: left;
+    color: black;
+    background: #f7f7f7;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.tooltipTitle {
+    padding: 0.5rem 0.75rem;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-bottom: 1px solid #cccccc;    
+}
+
+.tooltipText {
+    padding: 0.5rem 0.75rem;
+}
+
+.tooltip::before {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: calc(50% - 10px);
+        border-width: 10px 10px 0;
+        border-style: solid;
+        border-color: #cccccc transparent;       
+    }
+    
+    .tooltip::after {
+        content: "";
+        position: absolute;
+        bottom: -7px;
+        left: calc(50% - 7px);
+        border-width: 7px 7px 0;
+        border-style: solid;
+        border-color: #fff transparent;
+    }
+
+/*# sourceMappingURL=main.css.map*/
